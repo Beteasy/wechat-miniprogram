@@ -1,0 +1,15 @@
+<template name="lostAndFoundDetailTemplate">
+  <view class="lostAndFoundDetailContainer">
+  <image class='newsImage' src='{{newsImage}}'></image>
+  <view class='userInfo'>
+    <image class='userHead' src='{{userHead}}'></image>
+    <text class='userName'>{{userName}}</text>
+    <text class='constText'>发表于</text>
+    <text class='publishDate'>{{publishDate}}</text>
+  </view>
+  <text class='newsTitle'>{{newsTitle}}</text>
+  <view class=''>
+    <text class='newsContent'>{{newsContent}}</text>
+  </view>
+</view>
+</template>

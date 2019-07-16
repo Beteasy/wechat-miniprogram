@@ -1,0 +1,6 @@
+@import "lostAndFoundTemplate/lostAndFoundTemplate.wxss";
+
+.lostAndFoundContainer{
+  background-color: #f1f1f1;
+}
+

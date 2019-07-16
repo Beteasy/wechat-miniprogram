@@ -1,0 +1,41 @@
+<!--pages/myPage/myPage.wxml-->
+<view class='myPageContainer'>
+  <view wx:if="{{signIn==true}}" class='signInPageContainer'>
+    <view class='headerAndNickName'>
+      <image src='{{userinfo.avatarUrl}}' class='header'></image>
+      <text class='nickName'>{{userinfo.nickName}}</text>
+    </view>
+    <view class='functionList'>
+      <view class='myPublish' bindtap='myPublishEvent'>
+        <image class='functionIcon' src='../images/file.png'></image>
+        <text class='myPublishText'>我发布的信息</text>
+        <!-- <view class='detaileIcon'>
+          <image src='../images/right.png'></image>
+        </view> -->
+
+      </view>
+      <view class='publish' bindtap='publishInformation'>
+        <image class='functionIcon' src='../images/cloud-upload.png'></image>
+        <text class='publishText'>发布信息</text>
+        <!-- <view class='detaileIcon'>
+          <image src='../images/right.png'></image>
+        </view> -->
+
+      </view>
+    </view>
+  </view>
+  <view wx:else>
+    <view class='wxIcon'>
+      <image src='../images/wechatIcon.png'></image>
+    </view>
+    <view class='content'>
+      <view>申请获取以下权限</view>
+      <text>获得你的公开信息(昵称，头像等)</text>
+    </view>
+    <button class='botton' type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="getUserInfo">
+      授权登录
+    </button>
+  </view>
+  <!-- <button open-type='getUserInfo' bindgetuserinfo='getUserInfo'>用微信登录</button> -->
+</view>
+<!-- </view> -->

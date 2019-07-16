@@ -1,0 +1,15 @@
+<!-- pages/myPage/myNews/myNews.wxml-->
+<!-- <view wx:for="{{messages}}" wx:for-item="item" wx:key="key">
+  <text>{{item.title}}</text>
+  <text>{{item.content}}</text>
+  <image src='{{item.fileID}}'></image>
+</view>  -->
+<import src='../../lostAndFound/lostAndFoundTemplate/lostAndFoundTemplate.wxml' />
+
+<view class='myNewsContainer'>
+  <view wx:for="{{newsData}}" wx:for-item="item"  wx:key="key">
+    <view bindtap='navigateToDetail' data-newsId='{{item._id}}'>
+      <template is="lostAndFoundTemplate" data="{{...item}}" />
+    </view>
+  </view>
+</view>

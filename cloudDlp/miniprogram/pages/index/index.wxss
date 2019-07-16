@@ -1,0 +1,55 @@
+/**index.wxss**/
+
+/* 轮播图 */
+.swiper {
+  height: 400rpx;
+}
+.slide-image {
+  width: 750rpx;
+  height: 400rpx;
+}
+
+/* 导航区 */
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 96%;
+  margin: 0 auto;
+  margin-top: 16rpx;
+}
+
+.conlumn {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  height: 370rpx;
+  /* justify-content: space-around; */
+  float: left;
+  margin-top: 6rpx;
+}
+
+.conlumn .nav-pic {
+  width: 350rpx;
+  height: 370rpx;
+  position: relative;
+}
+
+.conlumn .nav-pic .icon-wrap {
+  position: absolute;
+  left: 32%;
+  top: 25%;
+  text-align: center;
+}
+
+.conlumn .nav-pic .icon-wrap image {
+  width: 98rpx;
+  height: 104rpx;
+}
+
+.conlumn .nav-pic .icon-wrap view {
+  font-size: 32rpx;
+  color: #fff;
+  margin-top: 18rpx;
+}

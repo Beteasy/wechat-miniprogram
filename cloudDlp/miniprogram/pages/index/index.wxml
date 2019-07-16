@@ -1,0 +1,44 @@
+<!--index.wxml-->
+
+<!-- 轮播图  -->
+<swiper indicator-dots="{{indicatorDots}}" class='swiper' indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular='{{circular}}'>
+  <block wx:for="{{swiperItems}}" wx:key="index">
+    <swiper-item>
+      <navigator url='{{item.url}}'>
+        <image src="{{item}}" class="slide-image" />
+      </navigator>
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- 导航区 -->
+<view class='nav'>
+  <view class='conlumn'>
+    <navigator url="/pages/lostAndFound/lostAndFound" hover-class='none'>
+      <image src='../images/stuff-bg.png' class='nav-pic'>
+        <view class='icon-wrap'>
+          <image src='../images/stuff.png'></image>
+          <view>失物招领</view>
+        </view>
+      </image>
+    </navigator>
+    <!-- add path -->
+    <navigator url='' hover-class='none'>
+      <image src='../images/location-bg.png' class='nav-pic'>
+        <view class='icon-wrap'>
+          <image src='../images/location.png'></image>
+          <view>校园导航</view>
+        </view>
+      </image>
+    </navigator>
+    <!-- add path -->
+    <navigator url='' hover-class='none'>
+      <image src='../images/read-fill-bg.png' class='nav-pic'>
+        <view class='icon-wrap'>
+          <image src='../images/read-fill.png'></image>
+          <view>课程旁听</view>
+        </view>
+      </image>
+    </navigator>
+  </view>
+</view>

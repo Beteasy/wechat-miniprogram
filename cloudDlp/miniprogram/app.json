@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/lostAndFound/lostAndFound",
+    "pages/fill/fill",
+    "pages/myPage/myPage",
+    "pages/myPage/myNews/myNews",
+   
+    "pages/lostAndFound/lostAndFoundDetail/lostAndFoundDetail",
+    "pages/myPage/myNews/myNewsDetail/myNewsDetail"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "生活成信",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+    "selectedColor":"#2aa515",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "text":"首页",
+        "iconPath":"pages/images/home.png",
+        "selectedIconPath": "pages/images/selectedHome.png"
+      },
+      {
+        "pagePath":"pages/myPage/myPage",
+        "text":"个人中心",
+        "iconPath":"pages/images/user.png",
+        "selectedIconPath":"pages/images/selectedUser.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,13 @@
+<view class="lostAndFoundDetailContainer">
+  <image class='newsImage' src='../../images/newsImage.jpg'></image>
+  <view class='userInfo'>
+    <image class='userHead' src='../../images/userHead.jpg'></image>
+    <text class='userName'>{{userName}}</text>
+    <text class='constText'>发表于</text>
+    <text class='publishDate'>{{publishDate}}</text>
+  </view>
+  <text class='newsTitle'>{{newsTitle}}</text>
+  <view class=''>
+    <text class='newsContent'>{{newsContent}}</text>
+  </view>
+</view>

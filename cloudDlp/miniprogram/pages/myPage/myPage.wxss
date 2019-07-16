@@ -1,0 +1,101 @@
+/* pages/myPage/myPage.wxss */
+
+.myPageContainer {
+  width: 100%;
+  /* height: 400rpx; */
+  height: 100%;
+}
+
+.signInPageContainer {
+}
+
+.headerAndNickName {
+  width: 100%;
+  background-color: #118fff;
+  height: 400rpx;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20rpx;
+}
+
+.header {
+  border-radius: 50%;
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.nickName {
+  margin-top: 10rpx;
+}
+
+
+.wxIcon {
+    margin: 90rpx 0 90rpx 50rpx;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    width: 650rpx;
+    height: 300rpx;
+    line-height: 450rpx;
+}
+ 
+.wxIcon image {
+    width: 200rpx;
+    height: 200rpx;
+}
+ 
+.content {
+    margin-left: 50rpx;
+    margin-bottom: 90rpx;
+}
+ 
+.content text {
+    display: block;
+    color: #9d9d9d;
+    margin-top: 40rpx;
+}
+ 
+.botton {
+    border-radius: 80rpx;
+    margin: 70rpx 50rpx;
+    font-size: 35rpx;
+}
+
+.myPublish{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  margin-top: 30rpx;
+  border: 1px solid #f0f0f0;
+  padding-left: 10rpx;
+  height: 90rpx;
+}
+
+.publish{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  margin-top: 30rpx;
+  border: 1px solid #f0f0f0;
+  padding-left: 10rpx;
+  height: 90rpx;
+}
+
+
+.functionIcon{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.detaileIcon{
+  float: right;
+}
+
+.detaileIcon image{
+  width: 50rpx;
+  height: 50rpx;
+  float: right;
+}

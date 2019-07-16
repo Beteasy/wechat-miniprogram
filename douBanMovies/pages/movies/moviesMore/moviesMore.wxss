@@ -1,0 +1,7 @@
+/* pages/movies/moviesMore/moviesMore.wxss */
+@import "moviesMoreTemplate/moviesMoreTemplate.wxss";
+
+.moviesMoreTemplate{
+  float: left;
+  margin-bottom: 40rpx;
+}

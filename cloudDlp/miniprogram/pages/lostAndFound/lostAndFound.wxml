@@ -1,0 +1,9 @@
+<import src='lostAndFoundTemplate/lostAndFoundTemplate.wxml' />
+
+<view class='lostAndFoundContainer'>
+  <view wx:for="{{newsData}}" wx:for-item="item"  wx:key="key">
+    <view bindtap='navigateToDetail' data-newsId='{{item._id}}'>
+      <template is="lostAndFoundTemplate" data="{{...item}}" />
+    </view>
+  </view>
+</view>

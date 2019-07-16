@@ -1,0 +1,6 @@
+<import src="../../movieTemplate/movieTemplate.wxml" />
+<template name="moviesMoreTemplate">
+  <view wx:for="{{movies}}" wx:for-item="item" wx:key="key" class='moviesMoreTemplate'>
+    <template is="movieTemplate" data="{{...item}}" />
+  </view>
+</template>

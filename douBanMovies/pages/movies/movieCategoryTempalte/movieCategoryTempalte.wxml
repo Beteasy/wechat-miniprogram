@@ -1,0 +1,21 @@
+<import src="../movieTemplate/movieTemplate.wxml" />
+
+<template name="movieCategoryTempalte">
+  <view class='movieCategoryTempalteContainer'>
+    <view class='innerContainer'>
+      <view class='movieHead'>
+        <text class='categoty'>{{categoryName}}</text>
+        <view bindtap='moreTap' class='more' data-categoryName='{{categoryName}}'>
+          <text class='moreText'>更多</text>
+          <image class='moreImage' src='../../images/newsImage.jpg'></image>
+        </view>
+      </view>
+      <view class='movieContainer'>
+        <!-- 加载三个movie -->
+        <view wx:for = "{{movies}}" wx:key="key">
+          <template is="movieTemplate" data="{{...item}}" />
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,15 @@
+<template name="lostAndFoundTemplate">
+  <!-- 一个消息块 -->
+  <view class='newsItem'>
+    <!-- 用户头像和用户名 -->
+    <view class='userInfo'>
+      <image class="userHead" src='{{userHead}}'></image>
+      <text class='userName'>{{userName}}</text>
+      <text class='publishDate'>{{publishDate}}</text>
+    </view>
+    <!-- 消息标题 -->
+    <text class='newsTitle'>{{newsTitle}}</text>
+    <image class='newsImage' src='{{newsImage}}'></image>
+    <text class='newsContent'>{{newsPreview}}</text>
+  </view>
+</template>

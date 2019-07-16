@@ -1,0 +1,25 @@
+<!--pages/fill/fill.wxml-->
+<view class='fillContainer'>
+  <form class='fill' bindsubmit='formSubmit'>
+    <view class='title'>
+      <text class='titleText'>标题</text>
+      <input class='titleInput' bindtap='inputEvent' placeholder='请输入标题' name="title"></input>
+    </view>
+    <view class='content'>
+      <text class='contentText'>内容</text>
+      <textarea class='contentArea' placeholder='请输入内容' name="content"></textarea>
+    </view>
+    <view class='imageModel'>
+      <text>上传图片</text>
+      <view class='stuffImage'>
+        <image class='uploadImage' src='../images/addPicture.png' bindtap='uploadImage'></image>
+        <image class='image' src='{{tempFilePaths}}' name="image"></image>
+      </view>
+
+    </view>
+
+    <view class='submitModel'>
+      <button class='submitButton' form-type='submit'>提交</button>
+    </view>
+  </form>
+</view>

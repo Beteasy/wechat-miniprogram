@@ -1,0 +1,59 @@
+
+/* @import "lostAndFoundDetailTemplate/lostAndFoundDetailTemplate.wxss"; */
+.lostAndFoundDetailContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsImage {
+  width: 100%;
+}
+
+.userInfo {
+  margin-top: 10rpx;
+  margin-bottom: 20rpx;
+}
+
+.userHead {
+  height: 66rpx;
+  width: 66rpx;
+  line-height: 66rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+
+.userName{
+  margin-left: 20rpx;
+  font-size: 30rpx;
+  vertical-align: middle;
+}
+
+.constText{
+  font-size: 24rpx;
+  margin-left: 20rpx;
+}
+
+.publishDate{
+  margin-left: 20rpx;
+  vertical-align: middle;
+   margin-bottom: 5px;
+  font-size: 26rpx;
+}
+
+.newsTitle{
+  font-size: 34rpx;
+  font-weight: 700;
+  margin-bottom: 10rpx;
+  margin-left: 40rpx;
+  letter-spacing: 2rpx;
+}
+
+.newsContent{
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+  margin-right: 44rpx;
+  letter-spacing: 2rpx;
+  font-size: 24rpx;
+} 
+

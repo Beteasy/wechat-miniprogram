@@ -1,0 +1,9 @@
+<!--pages/movies/moviesMore/moviesMore.wxml-->
+<import src="moviesMoreTemplate/moviesMoreTemplate.wxml" />
+<import src="../movieTemplate/movieTemplate.wxml" />
+
+<!-- <template name="moviesMoreTemplate" data="{{movies}}" /> -->
+
+<view wx:for="{{movies}}" wx:for-item="item" wx:key="key" class='moviesMoreTemplate' bindtap='movieDetailEvent' data-movieId='{{id}}'>
+  <template is="movieTemplate" data="{{...item}}" />
+</view>

@@ -1,0 +1,17 @@
+<!--pages/myPage/myNews/myNewsDetail/myNewsDetail.wxml-->
+<view class="lostAndFoundDetailContainer">
+  <image class='newsImage' src='{{newsImage}}'></image>
+  <view class='userInfo'>
+    <image class='userHead' src='{{userHead}}'></image>
+    <text class='userName'>{{userName}}</text>
+    <text class='constText'>发表于</text>
+    <text class='publishDate'>{{publishDate}}</text>
+  </view>
+  <text class='newsTitle'>{{newsTitle}}</text>
+  <view class=''>
+    <text class='newsContent'>{{newsContent}}</text>
+  </view>
+  <view class='deleteButton'>
+    <button type='warn' bindtap='deleteButtonEvent' style=' border-radius: 0rpx'>删除</button>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+<!--pages/movies/movies.wxml-->
+<import src="movieCategoryTempalte/movieCategoryTempalte.wxml" />
+
+<template is="movieCategoryTempalte" data="{{...inTheaters}}"/>
+<template is="movieCategoryTempalte" data="{{...comingSoon}}"/>
+<template is="movieCategoryTempalte" data="{{...top250}}"/>
